@@ -3,7 +3,7 @@
 
 This repository provides a simple utility tool (`combine-junit-testsuites`) to combine multiple JUnit XML files, each representing one testsuite, into a single JUnit XML file representing multiple testsuites.
 
-The main functionality is also available as a Go package.
+The main functionality is also available as a [Go package](https://pkg.go.dev/github.com/opendevstack/junit-testsuites/combine).
 
 ## Usage (CLI)
 
