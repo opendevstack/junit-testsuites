@@ -1,0 +1,19 @@
+<testsuites name="combined" tests="5" failures="2">
+	<testsuite name="com.example.packageA.ResourceTest" tests="2" failures="0" errors="0" id="0" hostname="some.fritz.box" time="29.116" timestamp="2023-11-07T10:05:00">
+		<testcase name="foo()" classname="com.example.packageA.ResourceTest" time="1.27"></testcase>
+		<testcase name="bar()" classname="com.example.packageA.ResourceTest" time="0.052"></testcase>
+		<system-out></system-out>
+		<system-err></system-err>
+	</testsuite>
+	<testsuite name="com.example.packageB.ResourceTest" tests="3" failures="2" errors="0" id="0" hostname="some.fritz.box" time="29.116" timestamp="2023-11-07T10:05:00">
+		<testcase name="foo()" classname="com.example.packageB.ResourceTest" time="0.67"></testcase>
+		<testcase name="bar()" classname="com.example.packageB.ResourceTest" time="0.031">
+			<failure message="some.VerificationException: Expected something but received another thing"></failure>
+		</testcase>
+		<testcase name="baz()" classname="com.example.packageB.ResourceTest" time="0.116">
+			<failure message="some.VerificationException: Expected something but received another thing"></failure>
+		</testcase>
+		<system-out></system-out>
+		<system-err></system-err>
+	</testsuite>
+</testsuites>
