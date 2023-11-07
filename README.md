@@ -34,6 +34,8 @@ if err := combine.CombineTestsuites(os.Stdout, opts); err != nil {
 }
 ```
 
-## Background
+## Background Information
 
 See https://github.com/windyroad/JUnit-Schema for more information on the JUnit XML schema.
+
+The main functionality of this repository is implemented using the [github.com/jstemmer/go-junit-report/v2/junit](https://pkg.go.dev/github.com/jstemmer/go-junit-report/v2/junit) package.
