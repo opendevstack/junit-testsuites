@@ -10,19 +10,17 @@ The main functionality is also available as a Go package.
 ```
 go install github.com/opendevstack/junit-testsuites/cmd/combine-junit-testsuites@latest
 
-combine-junit-testsuites \
-    -junit-glob='build/test-results/test/*.xml' \
-    -name=combined > combined.xml
+combine-junit-testsuites -junit-glob='build/test-results/test/*.xml' > combined.xml
 ```
 
 ## Usage (Go)
 
 ```
 import (
-	"log"
-	"os"
+    "log"
+    "os"
 
-	"github.com/opendevstack/junit-testsuites/combine"
+    "github.com/opendevstack/junit-testsuites/combine"
 )
 
 opts := combine.Options{
