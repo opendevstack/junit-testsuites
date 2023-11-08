@@ -12,7 +12,7 @@ import (
 )
 
 type Options struct {
-	JUnitGlob  string
+	FilesGlob  string
 	Name       string
 	KeepStdout bool
 	KeepStderr bool
@@ -21,7 +21,7 @@ type Options struct {
 // CombineTestsuites combines the Junit XML files given through opts
 // and writes the result to w.
 func CombineTestsuites(w io.Writer, opts Options) error {
-	matches, err := filepath.Glob(opts.JUnitGlob)
+	matches, err := filepath.Glob(opts.FilesGlob)
 	if err != nil {
 		return fmt.Errorf("invalid JUnit glob pattern: %s", err)
 	}

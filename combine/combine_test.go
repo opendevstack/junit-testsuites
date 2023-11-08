@@ -18,7 +18,7 @@ func TestCombine(t *testing.T) {
 	if err := CombineTestsuites(
 		b,
 		Options{
-			JUnitGlob:  "../testdata/fixtures/TEST-*.xml",
+			FilesGlob:  "../testdata/fixtures/TEST-*.xml",
 			Name:       "combined",
 			KeepStdout: false,
 			KeepStderr: false,

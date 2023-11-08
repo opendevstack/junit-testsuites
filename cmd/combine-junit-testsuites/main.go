@@ -3,7 +3,7 @@
 // Usage:
 //
 //		go run github.com/opendevstack/junit-testsuites \
-//			-junit-glob='build/test-results/test/*.xml' \
+//			-files='build/test-results/test/*.xml' \
 //	        -name=combined > combined.xml
 //
 // See https://github.com/windyroad/JUnit-Schema.
@@ -24,12 +24,12 @@ var nonAlphanumericRegex = regexp.MustCompile(`[^a-zA-Z0-9]+`)
 
 func main() {
 	opts := combine.Options{
-		JUnitGlob:  "*.xml",
+		FilesGlob:  "*.xml",
 		Name:       "combined",
 		KeepStdout: false,
 		KeepStderr: false,
 	}
-	flag.StringVar(&opts.JUnitGlob, "junit-glob", opts.JUnitGlob, "Glob pattern of JUnit XML files")
+	flag.StringVar(&opts.FilesGlob, "files", opts.FilesGlob, "Glob pattern of JUnit XML files")
 	flag.StringVar(&opts.Name, "name", opts.Name, "Name of combined testsuites")
 	flag.BoolVar(&opts.KeepStdout, "keep-stdout", opts.KeepStdout, "Whether to keep STDOUT of tests")
 	flag.BoolVar(&opts.KeepStderr, "keep-stderr", opts.KeepStderr, "Whether to keep STDERR of tests")

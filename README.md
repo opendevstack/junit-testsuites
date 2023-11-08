@@ -10,7 +10,7 @@ The main functionality is also available as a [Go package](https://pkg.go.dev/gi
 ```
 go install github.com/opendevstack/junit-testsuites/cmd/combine-junit-testsuites@latest
 
-combine-junit-testsuites -junit-glob='build/test-results/test/*.xml' > combined.xml
+combine-junit-testsuites -files='build/test-results/test/*.xml' > combined.xml
 ```
 
 ## Usage (Go)
@@ -24,7 +24,7 @@ import (
 )
 
 opts := combine.Options{
-    JUnitGlob:  "*.xml",
+    FilesGlob:  "*.xml",
     Name:       "combined",
     KeepStdout: false,
     KeepStderr: false,
