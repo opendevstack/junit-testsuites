@@ -10,6 +10,10 @@ listed in the changelog.
 
 ## [Unreleased]
 
+### Changed
+
+Rename `-junit-glob` flag to `-files`.
+
 ## [0.1.0] - 2023-11-07
 
 Initial version.
