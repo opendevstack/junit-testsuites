@@ -10,6 +10,8 @@ listed in the changelog.
 
 ## [Unreleased]
 
+## [0.3.0] - 2023-11-09
+
 ### Changed
 
 Prefer argument instead of `-files`. `-files` is still supported.
